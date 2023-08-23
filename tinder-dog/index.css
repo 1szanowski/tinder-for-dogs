@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(180deg, #FFF 0%, #F6F7FB 100%);
+    padding: 0px 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main-wrapper {
+    display: block;
+    width: 80%;
+    margin: auto auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 24px;
+}
+
+:root {
+    --image-button-background1: url('./images/icon-profile.png');
+    --image-button-background2: url('./images/logo.png');
+    --image-button-background3: url('./images/icon-chat.png');
+    --image-button-background4: url('./images/icon-cross.png');
+    --image-button-background5: url('./images/icon-heart.png');
+}
+
+.image-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-button:nth-child(1) {
+    background-image: var(--image-button-background1);
+}
+
+.image-button:nth-child(2) {
+    background-image: var(--image-button-background2);
+}
+
+.image-button:nth-child(3) {
+    background-image: var(--image-button-background3);
+}
+
+.image-button:nth-child(4) {
+    background-image: var(--image-button-background4);
+}
+
+.image-button:nth-child(5) {
+    background-image: var(--image-button-background5);
+}
+
+.main {
+    padding: 0px 8px;
+    /* max-width: 600px; 
+    margin: 0 auto; 
+    box-sizing: border-box;  */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 12px;
+    border-top-right-radius: 5px;
+    width: 100%;
+}
+
+.overlay-header {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.overlay-paragraph {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #B7B7B7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0px;
+}
+
+.image-button-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    margin-right: 5px;
+    transition: box-shadow 0.3s;
+
+}
+
+.image-button-footer>img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+#like:hover {
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.6);
+}
+
+#dislike:hover {
+    box-shadow: 0 0 10px rgba(255, 87, 51, 0.6);
+}
+
+.overlayd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 30%;
+    transform: rotate(-20deg);
+    transform-origin: top right;
+}
+
+.overlayd img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
